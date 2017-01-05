@@ -4,19 +4,16 @@
 
     _ = require('underscore');
     express = require('express');
+    path = require('path');
 
 
     //Config All Project
     serverConfig = {
-        _apiServerPath: '/home/hubtaxi-backend',
+        _apiServerPath: path.dirname(__dirname),
         _port: 6868,
         _sessionSecret: 'Enter Secret',
         _cookieSecret: 'Enter Secret',
-        /*_db: 'mongodb://admin:admin@ds027769.mongolab.com:27769/nodejsvn',*/
-        /*_db: 'mongodb://nodejs.vn:27678/nodejs',*/
-        _db: 'mongodb://localhost:27017/HubTaxi',
-        /*_db: 'mongodb://admin:admin@ds063297.mongolab.com:63297/nodejsforum',*/
-        //_db: 'mongodb://root:1234563@ds039507.mongolab.com:39507/mydb',
+        _db: 'mongodb://localhost:27017/mydb',
         _tokenScrete: 'huhuhu'
     };
 
@@ -80,3 +77,4 @@
 }).call(this);
 
 //# sourceMappingURL=init.map
+

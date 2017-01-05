@@ -72,6 +72,8 @@
      (5) Handle mapping CRUD with URL for request
      */
 
+    // @hack: make it work with nodejs 7.x
+    process.EventEmitter = require('events');
     CrudApi = require('./crud/crud-api').CrudApi;
 
 
