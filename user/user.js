@@ -80,8 +80,8 @@
 
         User.sendMessageRegister = function (userInfo, cb) {
             var messageInfo = {};
-            messageInfo.title = 'Chào mừng bạn đến với cộng đồng Nodejs Việt Nam';
-            messageInfo.message = "Bạn vừa đăng ký thành công tài khoản trên blog của Nodejs.VN với tài khoản : " + userInfo.username + ". Bạn có thể vào mục quản lý tài khoản để cập nhập thông tin của mình";
+            messageInfo.title = 'Welcome to the community Nodejs Vietnam';
+            messageInfo.message = "You've successfully registered account with blog accounts Nodejs.VN : " + userInfo.username + ". You can go to the Account Manager to update your information";
             messageInfo.user = userInfo.id;
             messageInfo.state = 0;
             messageInfo.messageAt = new Date();
